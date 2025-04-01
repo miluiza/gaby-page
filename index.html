@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabi Guassu</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/icons8-emoji-de-guitarra-48.png">
+
+  <!-- Google Fonts: Sen -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+  <!-- Seu estilo customizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <!-- NAVBAR transparente, textos brancos -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100" style="background-color: transparent; z-index: 10;">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">Gabi Guassu</a>
+        <button 
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#fotos">Fotos</a>
+            </li>
+            <li class="nav-item">
+              <!-- Agora este link vai para a nova seção de contato -->
+              <a class="nav-link btn btn-danger text-white px-3" href="#contato">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- SEÇÃO HOME (imagem de fundo) -->
+    <section class="home-page d-flex align-items-center text-white">
+      <!-- Adicionamos margin-top para não ficar atrás da navbar absoluta -->
+      <div class="container position-relative py-5" style="margin-top: 80px;">
+        <h1 class="display-3 fw-bold mb-3">Oi, sou Gabi Guassu,</h1>
+        <p class="lead mb-4" style="max-width: 600px;">
+          talentosa violonista, violeira e cantora natural de Pardinho, SP, 
+          com 17 anos de pura paixão pela música.
+        </p>
+        <a href="#sobre" class="btn btn-warning btn-lg">Sobre mim</a>
+      </div>
+    </section>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <!-- SEÇÃO SOBRE (card escuro) -->
+    <section id="sobre" class="py-5">
+      <div class="container">
+        <!-- Card com fundo escuro e texto branco -->
+        <div class="card bg-dark text-white shadow">
+          <div class="row g-0">
+            <!-- Coluna da imagem -->
+            <div class="col-md-4">
+              <img 
+                src="assets/images/ApresentacaoMicrofone.jpeg" 
+                alt="Foto de Gabi Guassu"
+                class="img-fluid h-100" 
+                style="object-fit: cover;"
+              >
+            </div>
+            <!-- Coluna do texto -->
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title display-5 fw-bold">Sobre mim</h2>
+                <p class="card-text mt-3">
+                  Há 4 anos, me dedico ao estudo da viola sob a orientação da renomada professora Karoline Violeira, e, há 2
+                  anos, aprimoro minhas habilidades no canto, violão, prática em banda e rítmica na escola Acordes IMA, em
+                  Botucatu. Atualmente, estudo com a renomada Barbara Stefanee para aprimorar meu vocal / fono. <br><br>
+                  Além dos estudos, integro grupos que valorizam a tradição musical: danço catira e
+                  também canto e toco viola em um grupo local de Pardinho. Continuo a investir no
+                  aperfeiçoamento de minhas técnicas vocais e instrumentais, sempre em busca de evoluir e encantar o público.<br><br>
+                  Tenho como sonho apresentar um show autêntico nos gêneros sertanejo raiz e universitário, tanto com o apoio de uma banda
+                  completa quanto em formato acústico, destacando o poder expressivo da viola e do violão.<br><br>
+                  Sou comprometida com o resgate da música raiz e do sertanejo, dedico-me a oferecer um espetáculo
+                  emocionante e de alta qualidade, repleto de boa música e energia. Em constante evolução, lapido minhas
+                  canções diariamente e busco conquistar os corações e sonhos de diversas gerações, equilibrando prazer,
+                  profissionalismo e meu inquestionável amor pelo palco e pela música.
+                </p>
+                <hr class="bg-light">
+                <h5>
+                  <a href="#redes-sociais" class="text-white text-decoration-none fw-bold">
+                    Redes sociais
+                  </a>
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO FOTOS (exemplo) -->
+    <section id="fotos" class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4 text-white">Galeria de Fotos</h2>
+        <div class="mx-auto fixed-carousel-container">
+          <div id="sobreCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <button 
+                type="button" 
+                data-bs-target="#sobreCarousel" 
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button 
+                type="button"
+                data-bs-target="#sobreCarousel" 
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button 
+                type="button"
+                data-bs-target="#sobreCarousel" 
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img 
+                  src="assets/images/DoisCantores.jpeg" 
+                  class="d-block w-100" 
+                  alt="Foto 1"
+                >
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img 
+                  src="assets/images/MaxViolao.jpeg" 
+                  class="d-block w-100" 
+                  alt="Foto 2"
+                >
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+              <div class="carousel-item">
+                <img 
+                  src="assets/images/RanchoCViolao.jpeg"
+                  class="d-block w-100"
+                  alt="Foto 3"
+                >
+                <div class="carousel-caption d-none d-md-block"></div>
+              </div>
+            </div>
+
+            <!-- Controles -->
+            <button 
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#sobreCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button 
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#sobreCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO (nova) -->
+    <section id="contato" class="py-5">
+      <div class="container">
+        <h2 class="mb-4 text-white">Contato</h2>
+        <p class="mb-4 text-white">
+          Ficou interessado em me contratar ou tem alguma dúvida? Entre em contato:
+        </p>
+        <div class="row">
+          <!-- Telefone -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <!-- Ícone de telefone (exemplo, ajuste para o seu ícone) -->
+              <img 
+                src="assets/icons/icons8-telefone-desligado-50.png" 
+                alt="Ícone Telefone" 
+                style="width: 40px; height: auto;" 
+                class="me-3"
+              >
+              <div>
+                <h5 class="text-white mb-0">Telefone</h5>
+                <!-- Ajuste o número ao real -->
+                <a href="tel:+5514996819799" class="text-white text-decoration-none">
+                  +55 (14) 9968-19799
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center">
+              <!-- Ícone de WhatsApp (exemplo, ajuste para o seu ícone) -->
+              <img 
+                src="assets/icons/icons8-whatsapp-48.png" 
+                alt="Ícone WhatsApp" 
+                style="width: 40px; height: auto;" 
+                class="me-3"
+              >
+              <div>
+                <h5 class="text-white mb-0">WhatsApp</h5>
+                <!-- Ajuste o link e o número ao real -->
+                <a 
+                  href="https://api.whatsapp.com/send?phone=5514998187849" 
+                  target="_blank" 
+                  class="text-white text-decoration-none"
+                >
+                  +55 (14) 9981-87849
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <!-- Renomeado o ID para não conflitar com o "Contato" -->
+  <footer id="rodape" class="py-3 bg-dark text-white text-center">
+    <div class="container">
+      <section id="redes-sociais" class="py-5 text-center">
+        <div class="container">
+          <h2 class="mb-3 text-white">Siga-me nas Redes Sociais</h2>
+          <p class="mb-4 text-white">Fique à vontade para me acompanhar nas principais plataformas:</p>
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a href="https://www.instagram.com/gabyguassu_cantora/?igsh=MzVyM2R2YWIzaDBx#" target="_blank">
+              <img 
+                src="assets/icons/icons8-instagram-48.png" 
+                alt="Instagram" 
+                style="width: 40px; height: auto;"
+              >
+            </a>
+            <a href="https://www.facebook.com/gabrielly.guassu.10?rdid=wKbdP5trnfUHgy22&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15eCMAQjCi%2F#" target="_blank">
+              <img 
+                src="assets/icons/icons8-facebook-48.png" 
+                alt="Facebook" 
+                style="width: 40px; height: auto;"
+              >
+            </a>
+            <a href="https://www.youtube.com/@Gabrielly_guassu2020" target="_blank">
+              <img 
+                src="assets/icons/icons8-youtube-48.png" 
+                alt="YouTube" 
+                style="width: 40px; height: auto;"
+              >
+            </a>
+            <a href="https://www.tiktok.com/@gabyguassu_cantora?_t=ZM-8v60Zk6IGk3&_r=1" target="_blank">
+              <img 
+                src="assets/icons/icons8-tiktok-48.png" 
+                alt="TikTok" 
+                style="width: 40px; height: auto;"
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <p class="m-0">&copy; 2025 - Gaby Guassu. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS (CDN) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+</html>
