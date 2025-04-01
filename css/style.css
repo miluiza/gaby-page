@@ -24,7 +24,7 @@ body {
   position: absolute;
   inset: 0;
   /* "center 15%" para "subir" a imagem e exibir mais a parte de baixo */
-  background: url("/assets/images/PalcoCViolao.jpeg")
+  background: url("assets/images/PalcoCViolao.jpeg")
               no-repeat center 15% / cover; 
   opacity: 0.3; /* Ajuste conforme quiser a visibilidade */
   z-index: 0;
